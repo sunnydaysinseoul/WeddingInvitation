@@ -14,7 +14,7 @@ function changeImage() {
 }
 
 function init(){
-  // myImage[3].style.display = "block";  
+  myImage[0].style.display = "block";  
   for (i = 0; i < myImage.length; i++) {
     myImage[i].style.display = "none";  
   }
