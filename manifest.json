@@ -1,0 +1,11 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "wedding invitation",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "invitation",
+  "start_url": "/",
+  "theme_color": "#ffffff"
+}
