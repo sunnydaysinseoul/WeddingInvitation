@@ -1,5 +1,10 @@
 const myImage = document.getElementsByClassName("img");
-
+document.addEventListener('DOMContentLoaded', function () {
+  if (!Notification) {
+    alert('Notification not supported');
+    return;
+  }
+});
 var myIndex = 0;
 
 function changeImage() {
@@ -21,4 +26,21 @@ function init(){
   changeImage();
 }
 
+
+function notif(bodis) {
+  if (Notification.permission !== "granted")
+    Notification.requestPermission();
+  else {
+    var notification = new Notification('Notification Title', {
+      icon: 'url/to/icon.png',
+      body: bodis,
+    });
+
+    notification.onclick = function () {
+      window.open("window/open/on/notification/click");
+    };
+  }
+}
+
 init();
+
