@@ -6,7 +6,7 @@
   "orientation": "any",
   "scope": "/",
   "short_name": "invitation",
-  "start_url": "https://sunnydaysinseoul.github.io/WeddingInvitation/",
+  "start_url": "./",
   "theme_color": "#ffffff",
   "icons": [
     {
