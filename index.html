@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="manifest" href="manifest.json">
-
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,17 +17,22 @@
     <script type="text/javascript"
         src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=08nn6ceqnp"></script>
 
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
     <script type="module">
         import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
         const el = document.createElement('pwa-update');
         document.body.appendChild(el);
     </script>
+    
     <title>Wedding Invitation</title>
 </head>
 
 <body>
     <!-- push 알림 보내기 버튼 -->
     <button type="button" onclick="notif('Notification Body');">NOTIFY TEST</button>
+    <button onClick=installApp()>앱 설치하기</button>
+
     <div class="firstPage">
         <div class="header1">SAVE THE DATE</div>
         <div class="header2">Youngsun</div>
